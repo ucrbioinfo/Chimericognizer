@@ -47,40 +47,64 @@ Novo&Chimeric offers two ways to input parameters for users as follow:
 
 (1) first way
 e.g. 
+
 $cd ./Novo_Chimeric
+
 $python ./scripts/main.py  -x /home/stelo/BIONANO_in_progress/tools/RefAligner -i /home/weihua/cowpea/fastas_cowpea_eight.txt -o /home/weihua/cowpea/eight_chimeric_multioptmap -m /home/weihua/cowpea/optmaps_for_cowpea.txt -p 32 -a 1.5 -b 1 -c 10 -d 25 -e 50000 -h 50000
 
 (2) second way  
 e.g.
+
 $cd ./Novo_Chimeric
+
 $python ./scripts/main.py -f ~/cowpea/parameters.txt
+
 Then in parameters.txt, the parameters are listed line by line as follows:
+
 -x /home/stelo/BIONANO_in_progress/tools/RefAligner
+
 -i /home/weihua/cowpea/fastas_cowpea_eight.txt
+
 -o /home/weihua/cowpea/eight_chimeric_multioptmap
+
 -m /home/weihua/cowpea/optmaps_for_cowpea.txt
+
 -p 32
+
 -a 1.5
+
 -b 1
+
 -c 10
+
 -d 25
+
 -e 50000
+
 -h 50000
 
 
 -i: specify the fasta list file which lists the address of input fasta files line by line.  
 e.g. fasta_list.txt 
+
 /home/stelo/cowpea/falcon.fasta  
+
 /home/weihua/cowpea/canu.fasta  
+
 ./falcon.fasta  
+
 This parameter is required to be specified by users.   
 
 -o: specify the output dirctory which will contains all of the output files and intermediate files generated. This parameter is required to be specified by users.   
 
 -m: specify the optical map list file which lists the type of restriction enzyme and address of all the optical maps line by line. 
+
 e.g. optmaps_for_cowpea.txt
+
 BspQI   /home/stelo/BIONANO_in_progress/vu_162_180K.cmap
+
 BssSI   /home/stelo/BIONANO_in_progress/vu_bsss1_102.cmap
+
 This parameter is required to be specified by users.   
 
 -p: specify the number of threads. The default value is "32".  
