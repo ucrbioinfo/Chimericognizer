@@ -7,7 +7,7 @@
 # DESCRIPTION
 
 Novo&Chimeric is a novel and accurate chimeric contigs correction tool which can correct chimeric contigs and chimeric optical maps by each other. In Novo&Chimeric, the problem is modeled into weighted vertex cover problem for deciding whether to correct contigs or optical maps when they conflict. Experiments show that our tool can outperform manual work done by experienced researcher of genome assembly problem using much less time.
-Until now, Novo&Chimeric can only run on Unix/Linux systems.  
+Novo&Chimeric is written in python. Until now, Novo&Chimeric can only run on Unix/Linux systems.  
 
 
 
