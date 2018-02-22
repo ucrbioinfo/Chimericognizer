@@ -1,13 +1,13 @@
 
 
-# Novo&Chimeric Software
+# Chimericognizer Software
 
 
 
 # DESCRIPTION
 
-Novo&Chimeric is a novel and accurate chimeric contigs correction tool which can correct chimeric contigs and chimeric optical maps by each other. In Novo&Chimeric, the problem is modeled into weighted vertex cover problem for deciding whether to correct contigs or optical maps when they conflict. Experiments show that our tool can outperform manual work done by experienced researcher of genome assembly problem using much less time.
-Novo&Chimeric is written in python. Until now, Novo&Chimeric can only run on Unix/Linux systems.  
+Chimericognizer is a novel and accurate chimeric contigs correction tool which can correct chimeric contigs and chimeric optical maps by each other. In Chimericognizer, the problem is modeled into weighted vertex cover problem for deciding whether to correct contigs or optical maps when they conflict. Experiments show that our tool can outperform manual work done by experienced researcher of genome assembly problem using much less time.
+Chimericognizer is written in python. Until now, Chimericognizer can only run on Unix/Linux systems.  
 
 
 
@@ -15,19 +15,19 @@ Novo&Chimeric is written in python. Until now, Novo&Chimeric can only run on Uni
 
 
 1. python   
-The majoy part of Novo&Chimeric is written in Python, so Python has to be installed. 
+The majoy part of Chimericognizer is written in Python, so Python has to be installed. 
 Python2.7(or above) is suggested.  
 
 2. perl   
-In Novo&Chimeric, we use one perl script "fa2cmap_multi.pl" of a scaffolding tool Irys-scaffolding.
+In Chimericognizer, we use one perl script "fa2cmap_multi.pl" of a scaffolding tool Irys-scaffolding.
 So perl has to be installed.
 
 3. RefAligner   
-RefAligner is a tool developed by BioNano company to align contigs to optical maps. It is called by Novo&Chimeric, so it has to be installed. 
+RefAligner is a tool developed by BioNano company to align contigs to optical maps. It is called by Chimericognizer, so it has to be installed. 
 RefAligner can be found from http://www.bnxinstall.com/RefalignerAssembler/Linux/ 
 
 4. fa2cmap_multi.pl   
-In Novo&Chimeric, we use one perl script "fa2cmap_multi.pl" of a scaffolding tool Irys-scaffolding. 
+In Chimericognizer, we use one perl script "fa2cmap_multi.pl" of a scaffolding tool Irys-scaffolding. 
 The users need to download this script from https://github.com/i5K-KINBRE-script-share/Irys-scaffolding/blob/e8e8f177dce2bf59421bd00c517ab7dc683e25d4/KSU_bioinfo_lab/assemble_XeonPhi/third-party/fa2cmap_multi.pl
 and then put it in our ./Novo_Stitch/tools directory.   
 
@@ -43,7 +43,7 @@ Functional parameters are the ones that users may have to set by themselves. For
 1. functional parameters  
 
 -f: specify the parameter file which lists all the input paramerters.
-Novo&Chimeric offers two ways to input parameters for users as follow:
+Chimericognizer offers two ways to input parameters for users as follow:
 
 (1) first way
 e.g. 
