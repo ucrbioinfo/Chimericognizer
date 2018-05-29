@@ -62,23 +62,36 @@ $python ./scripts/main.py -f ~/cowpea/parameters.txt
 Then in parameters.txt, the parameters are listed line by line as follows:
 
 -x /home/stelo/BIONANO_in_progress/tools/RefAligner 
+
 -y /home/weihua/Chimericognizer/tools/fa2cmap_multi.pl 
+
 -i /home/weihua/cowpea/fastas_cowpea_eight.txt 
+
 -o /home/weihua/cowpea/eight_chimeric_multioptmap 
+
 -m /home/weihua/cowpea/optmaps_for_cowpea.txt 
+
 -p 32 
+
 -a 1.5 
+
 -b 1 
+
 -d 25 
+
 -e 50000 
+
 -h 50000 
+
 -r 80000
 
 -i: specify the fasta list file which lists the address of input fasta files line by line.  
 e.g. fasta_list.txt 
 
 /home/stelo/cowpea/falcon.fasta  
+
 /home/weihua/cowpea/canu.fasta  
+
 /home/weihua/cowpea/falcon.fasta  
 
 This parameter is required to be specified by users.   
