@@ -30,7 +30,6 @@ RefAligner can be found from http://www.bnxinstall.com/RefalignerAssembler/Linux
 In Chimericognizer, we use one perl script "fa2cmap_multi.pl" of a scaffolding tool Irys-scaffolding. 
 The users need to download this script from https://github.com/i5K-KINBRE-script-share/Irys-scaffolding/blob/e8e8f177dce2bf59421bd00c517ab7dc683e25d4/KSU_bioinfo_lab/assemble_XeonPhi/third-party/fa2cmap_multi.pl
 and then input it as a parameter after "-y".
-
 Please note that "fa2cmap_multi.pl" only supports 5 types restriction enzymes BspQI, BbvCI, BsmI, BsrDI and bseCI for now. So if you want to use other restriction enzymes, you may need to add them into "fa2cmap_multi.pl" file from line 53. 
 
 
