@@ -195,6 +195,7 @@ In "./Chimericognizer/examples/" directory, we give a small example for users to
 The users could follow the steps as follow:  
 
 $cd ./Chimericognizer
+
 $python -x <YOUR REFALIGNER PATH> -y <YOUR fa2cmap_multi.pl PATH> -o <YOUR OUTPUT PATH> -i ./examples/contig_file_list.example.txt -m ./examples/optmap_list.example.txt -p 8 -a 1.5 -b 1.0 -d 25 -e 50000 -h 50000 -r 80000
 
 If the output files in your output directory is same as the files in "./Chimericognizer/examples/output.example" directory, you have installed Chimericognizer successfully. 
