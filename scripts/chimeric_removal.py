@@ -6,6 +6,19 @@ from chname_fasta import chname_fasta
 from fasta_long_seqs import fasta_long_seqs
 from chimeric_removal_onetime import chimeric_removal_onetime
 
+def abs_path(path):
+    cols = path.split('/')
+    if cols[0] == '~':
+        user = os.path.expanduser('~') 
+        return user + path[1:]
+    if cols[0] == '.':
+        current = os.path.abspath(os.path.join(os.getcwd(), "."))
+        return current + path[1:]
+    if cols[0] == '..':
+        parent = os.path.abspath(os.path.join(os.getcwd(), ".."))
+        return parent + path[2:]
+    return path
+
 def output_paras(fasta_list_file, output_dir, optmap_list_file, num_threads, REFALIGNER, threshold_1, threshold_2, threshold_3, threshold_4, threshold_5, threshold_6):
     fo = file(output_dir+"/parameters.log", 'w')
     fo.write("fasta list files:\t"+fasta_list_file+"\n")
@@ -27,15 +40,17 @@ def get_optmap_info(optmap_list_file, output_dir):
     optmap_type_list = []
     for line in open(optmap_list_file):
         line = line.strip()
+        if len(line) == 0:
+            continue
         cols = line.split()
         optmap_type = cols[0]
-        optmap = cols[1]
+        optmap = abs_path(cols[1])
         fo.write(optmap_type+"\t"+optmap+"\n")
         optmap_list.append(optmap)
         optmap_type_list.append(optmap_type)
     return optmap_list, optmap_type_list
 
-def chimeric_removal(paras_file, fasta_list_file, output_dir, DIGEST, REFALIGNER, optmap_list_file, num_threads, threshold_1, threshold_2, threshold_3, threshold_4, threshold_5, threshold_6):
+def chimeric_removal(fasta_list_file, output_dir, DIGEST, REFALIGNER, optmap_list_file, num_threads, threshold_1, threshold_2, threshold_3, threshold_4, threshold_5, threshold_6):
 
     #tools
 

@@ -37,7 +37,8 @@ Please note that "fa2cmap_multi.pl" only supports 5 types restriction enzymes Bs
 
 
 There are two kinds of parameters, functional parameters and performance related parameters. 
-Functional parameters are the ones that users may have to set by themselves. For performance related parameters, many users may not be able to understand the meaning of some of them. For these users, we suggest them to use default parameters. For all the parameters about address, absolute paths are preferred. 
+Functional parameters are the ones that users may have to set by themselves. For performance related parameters, many users may not be able to understand the meaning of some of them. For these users, we suggest them to use default parameters. 
+
 
 1. functional parameters  
 
@@ -84,6 +85,9 @@ Then in parameters.txt, the parameters are listed line by line as follows:
 
 -r 80000
 
+For all the parameters about address, absolute paths are preferred. If you use relative paths, '.' and '..' always represent './Chimericognizer' directory and its parent directory respectively, and '~' represents current user's repository.  
+
+
 -i: specify the fasta list file which lists the address of input fasta files line by line.  
 e.g. fasta_list.txt 
 
@@ -95,9 +99,14 @@ e.g. fasta_list.txt
 
 This parameter is required to be specified by users.   
 
+For all the parameters about address, absolute paths are preferred. If you use relative paths, '.' and '..' always represent './Chimericognizer' directory and its parent directory respectively, and '~' represents current user's repository.  
+
+
 -o: specify the output dirctory which will contains all of the output files and intermediate files generated. This parameter is required to be specified by users.   
 
+
 -m: specify the optical map list file which lists the type of restriction enzyme and address of all the optical maps line by line. 
+
 
 e.g. optmaps_for_cowpea.txt
 
@@ -107,10 +116,15 @@ BssSI   /home/stelo/BIONANO_in_progress/vu_bsss1_102.cmap
 
 This parameter is required to be specified by users.   
 
+For all the parameters about address, absolute paths are preferred. If you use relative paths, '.' and '..' always represent './Chimericognizer' directory and its parent directory respectively, and '~' represents current user's repository.  
+
+
 -p: specify the number of threads. The default value is "32".  
+
 
 -x: specify the address of Refaligner executable program on your machine. e.g. /home/weihua/tools/RefAligner
 If you can run RefAligner in any directory of your machine by command like "RefAligner [parameters]", then you can put "RefAligner" as this parameter after "-x". Anyway, this parameter should be the first term of the command your input when you run RefAligner on your machine. The default value is "RefAligner".   
+
 
 -y: specify the address of fa2cmap_multi.pl file. e.g. /home/weihua/Chimericognizer/tools/fa2cmap_multi.pl
 
@@ -172,3 +186,17 @@ optmap_cut_*.log: the new optical map id corresponding to old one.
 refaligner/ directory: storing the ourput of fa2cmap_multi.pl and refaligner
 
 alms_used.log: alignments left after pre-processing
+
+
+
+# TEST
+
+In "./Chimericognizer/examples/" directory, we give a small example for users to test. 
+The users could follow the steps as follow:  
+
+$cd ./Chimericognizer
+$python -x <YOUR REFALIGNER PATH> -y <YOUR fa2cmap_multi.pl PATH> -o <YOUR OUTPUT PATH> -i ./examples/contig_file_list.example.txt -m ./examples/optmap_list.example.txt -p 8 -a 1.5 -b 1.0 -d 25 -e 50000 -h 50000 -r 80000
+
+If the output files in your output directory is same as the files in "./Chimericognizer/examples/output.example" directory, you have installed Chimericognizer successfully. 
+
+

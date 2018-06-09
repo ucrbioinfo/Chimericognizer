@@ -1,6 +1,19 @@
 import sys
 import os.path
 
+def abs_path(path):
+    cols = path.split('/')
+    if cols[0] == '~':
+        user = os.path.expanduser('~') 
+        return user + path[1:]
+    if cols[0] == '.':
+        current = os.path.abspath(os.path.join(os.getcwd(), "."))
+        return current + path[1:]
+    if cols[0] == '..':
+        parent = os.path.abspath(os.path.join(os.getcwd(), ".."))
+        return parent + path[2:]
+    return path
+
 def output_input(output_dir, fname_list):
     
     fo = file(output_dir+"/input.log", 'w')
@@ -33,7 +46,7 @@ def merge_inputs(output_dir, fasta_list_file, merged_fasta_file):
         line = line.strip()
         if line == "":
             continue
-        fname_list.add(line)
+        fname_list.add(abs_path(line))
     output_input(output_dir, fname_list)
     fout = file(merged_fasta_file, 'w')
     for fn in fname_list:
