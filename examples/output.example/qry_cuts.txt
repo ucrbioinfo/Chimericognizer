@@ -1,0 +1,3 @@
+qry_id	cutting positions
+2	3063437 
+4	1657855 

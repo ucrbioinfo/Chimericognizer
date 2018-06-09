@@ -1,0 +1,10 @@
+# hostname=dipankar
+# $ cd /home/csgrads/wpan005/Chimericognizer; /home/csgrads/wpan005/Refaligner/RefAligner -f -ref /home/csgrads/wpan005/Chimericognizer/examples/optmap_BspQI.example.cmap -i /home/csgrads/wpan005/output/refaligner/input_contigs_BspQI.cmap -o /home/csgrads/wpan005/output/refaligner/input_contigs_BspQI_BNG_VS_seq -endoutlier 1e-3 -outlier 1e-4 -extend 1 -FN 0.05 -FP 0.5 -sf 0.2 -sd 0.1 -sr 0.02 -res 2.9 -resSD 0.75 -mres 1.2 -A 5 -biaswt 0 -M 3 -Mfast 0 -maxmem 256 -maxthreads 8 -deltaX 9 -deltaY 9 -xmapchim 14 -RepeatMask 2 0.01 -RepeatRec 0.7 0.6 -T 1e-15 -stdout -stderr -xmaplen -indel
+# CompileDir= /home/users2/vdergachev/tools/tools.3625.3827/3625 SVNversion=3827 $Header: http://svn.bnm.local:81/svn/Informatics/RefAligner/branches/3625/RefAligner.cpp 3617 2015-03-06 23:19:53Z tanantharaman $
+# FLAGS: USE_SSE=0 USE_AVX=0 USE_MIC=0 USE_PFLOAT=1 USE_RFLOAT=1 DEBUG=1 VERB=1
+# SMAP File Version:	0.0
+# Reference Maps From:	/home/csgrads/wpan005/output/refaligner/input_contigs_BspQI_BNG_VS_seq_r.cmap
+# Query Maps From:	/home/csgrads/wpan005/output/refaligner/input_contigs_BspQI_BNG_VS_seq_q.cmap
+# Xmap Entries From:	/home/csgrads/wpan005/output/refaligner/input_contigs_BspQI_BNG_VS_seq.xmap
+#h SmapEntryID	QryContigID	RefcontigID1	RefcontigID2	QryStartPos	QryEndPos	RefStartPos	RefEndPos	Orientation	Confidence	Type	XmapID1	XmapID2
+#f int        	int        	int         	int         	float      	float    	float      	float    	string     	float 	string 	int	int

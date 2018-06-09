@@ -1,0 +1,3 @@
+BspQI	./examples/optmap_BspQI.example.cmap	
+
+

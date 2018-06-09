@@ -1,0 +1,105 @@
+# hostname=dipankar
+# $ cd /home/csgrads/wpan005/Chimericognizer; /home/csgrads/wpan005/Refaligner/RefAligner -f -ref /home/csgrads/wpan005/Chimericognizer/examples/optmap_BspQI.example.cmap -i /home/csgrads/wpan005/output/refaligner/input_contigs_BspQI.cmap -o /home/csgrads/wpan005/output/refaligner/input_contigs_BspQI_BNG_VS_seq -endoutlier 1e-3 -outlier 1e-4 -extend 1 -FN 0.05 -FP 0.5 -sf 0.2 -sd 0.1 -sr 0.02 -res 2.9 -resSD 0.75 -mres 1.2 -A 5 -biaswt 0 -M 3 -Mfast 0 -maxmem 256 -maxthreads 8 -deltaX 9 -deltaY 9 -xmapchim 14 -RepeatMask 2 0.01 -RepeatRec 0.7 0.6 -T 1e-15 -stdout -stderr -xmaplen -indel
+# CompileDir= /home/users2/vdergachev/tools/tools.3625.3827/3625 SVNversion=3827 $Header: http://svn.bnm.local:81/svn/Informatics/RefAligner/branches/3625/RefAligner.cpp 3617 2015-03-06 23:19:53Z tanantharaman $
+# FLAGS: USE_SSE=0 USE_AVX=0 USE_MIC=0 USE_PFLOAT=1 USE_RFLOAT=1 DEBUG=1 VERB=1
+Reading input maps from /home/csgrads/wpan005/output/refaligner/input_contigs_BspQI.cmap
+reducing site memory from 1223 sites to 1223 sites (9936 bytes) for 6 maps (nummaps=6): time=0.027824(wall time=0.037275)
+reducing Cmap memory from 58195968 to 5328 bytes: time=0.027876(wall time=0.037327)
+Read 6 Maps from /home/csgrads/wpan005/output/refaligner/input_contigs_BspQI.cmap (total maps=6, length=14755.993 kb, avg=2459.332 kb)
+Read 3 reference maps from 1 input files (total maps=3, length=6598.485 kb, avg=2199.495 kb)
+kmax=1,average Kmax[I]=0.070
+1:K=2.20,KL=2.10,KF=2.10,G=1.00,B=1.00,pTP=0.9500,F=0.00500000,R=0.000407,Xtheta=12.0654071954,Ylambda=11.6714(Xl=12.1926),Ygm=8.4241,Frate=-0.0774749666,PixelLen= 0.5000000000
+LBias=0.034404,EBias=0.7412,FBias=-0.9840(PRbias=0.0000,Sbias=2.4664)FnPenalty=2.9957,FpPenalty=2.80797482,sf=0.200000,sd=0.100000,sr=0.020000,se=0.000000,res=2.90000000,resSD=0.75000000,minscore=-92.859
+Poutlier=0.000100(OutlierBias=0.000000,Pen=-9.210240e+00),PoutlierEnd=0.001000:cpu time=0.070308, wall time=0.096371
+refid=0/3(id=95),sites=152:
+refid=0:Using 6 threads(nummaps=6,block=1)
+[refid=0:total alignments=2/7 (alignids=0..6,nummaps=6,totalmaps=7)]: cum CPU time=0.382943 wall time=0.259087 secs
+refid=1/3(id=29),sites=238:
+[refid=1:total alignments=5/11 (alignids=2..10,nummaps=6,totalmaps=10)]: cum CPU time=0.813058 wall time=0.456953 secs
+refid=2/3(id=30),sites=181:
+[refid=2:total alignments=6/12 (alignids=5..11,nummaps=6,totalmaps=11)]: cum CPU time=1.110007 wall time=0.578825 secs
+refmaps=3,maps=6,totalmaps=6,11: true positives=0(negative scores=0)
+  6 alignments:score=255.2380,LogPV=122.6506,pairs=96.00,LogLR=110.848477
+  6 above threshold:score=255.238050,LogPV=122.6506,pairs=96.00,LogLR=110.848477(1.166826/site)
+  outliers=0/570 (rate=0.000119), endoutliers=5/582 (rate=0.008591)
+  chimeric sites=5/576(0.008681),chimeric frags=0(FP=0,close pairs=0)):
+  PrPen=-11.205184,Xsites=623.0: PRbias = 0.000000 -> -0.017986
+  sumX=7783.159(6156.333),sumY=7909.642 w/outliers,FPcnt=47(isolated=7) : FP = 0.500000 -> 0.603868(unbiased=0.763441) (per 100kb), FPrate=0.081597
+  sitecnt=576,FNcnt=0(isolated=0) : FN= 0.050000 -> 0.000000
+  var(y,r) = sf^2 + sd^2 y +sr^2 y^2 + se^2 r^2: sf = 0.200000 -> 0.230124 (kb), sd = 0.100000 -> -0.048367 (kb^1/2), sr = 0.020000 -> 0.014640, se = 0.000000 -> 0.000000
+  Bases per pixel = 500.0000 -> 510.0768 (S.D. =2.1603) (FP = 0.603868 -> 0.591938)
+    Rescaling all map site[] and rawsite[] values  by C=1.020153606099 (reflecting change in bpp)
+2:K=2.20,KL=2.10,KF=2.10,G=1.00,B=1.00,pTP=0.9990,F=0.00591938,R=0.000399,Xtheta=12.3085686595,Ylambda=11.6714(Xl=13.2639),Ygm=8.4241,Frate=-0.0749262497,PixelLen= 0.5100768030
+LBias=0.044229,EBias=0.5578,FBias=-1.9715(PRbias=0.0000,Sbias=3.0870)FnPenalty=6.9078,FpPenalty=2.61922741,sf=0.230124,sd=-0.048367,sr=0.014640,se=0.000000,res=2.84270916,resSD=0.73518340,minscore=-152.432
+Poutlier=0.000100(OutlierBias=0.000000,Pen=-9.210240e+00),PoutlierEnd=0.001000:cpu time=9.118206, wall time=4.193388
+refid=0/3(id=95),sites=152:
+[refid=0:total alignments=2/7 (alignids=0..6,nummaps=6,totalmaps=12)]: cum CPU time=9.410337 wall time=4.361709 secs
+refid=1/3(id=29),sites=238:
+[refid=1:total alignments=5/11 (alignids=2..10,nummaps=6,totalmaps=15)]: cum CPU time=9.853071 wall time=4.556531 secs
+refid=2/3(id=30),sites=181:
+[refid=2:total alignments=6/12 (alignids=5..11,nummaps=6,totalmaps=16)]: cum CPU time=10.121847 wall time=4.674569 secs
+refmaps=3,maps=6,totalmaps=6,16: true positives=0(negative scores=0)
+  6 alignments:score=294.1710,LogPV=123.5980,pairs=95.67,LogLR=127.756850
+  6 above threshold:score=294.171018,LogPV=123.5980,pairs=95.67,LogLR=127.756850(1.344809/site)
+  outliers=0/568 (rate=0.000084), endoutliers=5/580 (rate=0.008621)
+  chimeric sites=5/576(0.008681),chimeric frags=0(FP=0,close pairs=0)):
+  PrPen=-9.138203,Xsites=625.0: PRbias = 0.000000 -> -0.014621
+  sumX=7940.018(6311.154),sumY=7928.633 w/outliers,FPcnt=49(isolated=7) : FP = 0.591938 -> 0.617127(unbiased=0.776403) (per 100kb), FPrate=0.085069
+  sitecnt=576,FNcnt=0(isolated=0) : FN= 0.001000 -> 0.000000
+  var(y,r) = sf^2 + sd^2 y +sr^2 y^2 + se^2 r^2: sf = 0.230124 -> 0.238241 (kb), sd = -0.048367 -> -0.060404 (kb^1/2), sr = 0.014640 -> 0.015703, se = 0.000000 -> 0.000000
+  Bases per pixel = 510.0768 -> 510.2867 (S.D. =2.1380) (FP = 0.617127 -> 0.616873)
+    Rescaling all map site[] and rawsite[] values  by C=1.000411500901 (reflecting change in bpp)
+3:K=2.20,KL=2.10,KF=2.10,G=1.00,B=1.00,pTP=0.9990,F=0.00616873,R=0.000398,Xtheta=12.3136336466,Ylambda=11.6714(Xl=13.3147),Ygm=8.4241,Frate=-0.0746436492,PixelLen= 0.5102867001
+LBias=0.045929,EBias=0.5578,FBias=-2.0326(PRbias=0.0000,Sbias=3.1482)FnPenalty=6.9078,FpPenalty=2.57755494,sf=0.238241,sd=-0.060404,sr=0.015703,se=0.000000,res=2.84153986,resSD=0.73488100,minscore=-151.765
+Poutlier=0.000100(OutlierBias=0.000000,Pen=-9.210240e+00),PoutlierEnd=0.001000:cpu time=16.435814, wall time=7.504862
+refid=0/3(id=95),sites=152:
+[refid=0:total alignments=2/7 (alignids=0..6,nummaps=6,totalmaps=17)]: cum CPU time=16.728119 wall time=7.646830 secs
+refid=1/3(id=29),sites=238:
+[refid=1:total alignments=5/11 (alignids=2..10,nummaps=6,totalmaps=20)]: cum CPU time=17.156378 wall time=7.808992 secs
+refid=2/3(id=30),sites=181:
+[refid=2:total alignments=6/12 (alignids=5..11,nummaps=6,totalmaps=21)]: cum CPU time=17.446119 wall time=7.939689 secs
+Log10PV threshold vs Mapping Rate (numaligns=6,LogPV range=15.0 .. 30.0,MapRate=0.0000):
+Log10PV=15.00 MappingRate=0.833 (coverage = 1.86)
+Log10PV=16.00 MappingRate=0.833 (coverage = 1.86)
+Log10PV=17.00 MappingRate=0.833 (coverage = 1.86)
+Log10PV=18.00 MappingRate=0.833 (coverage = 1.86)
+Log10PV=19.00 MappingRate=0.833 (coverage = 1.86)
+Log10PV=20.00 MappingRate=0.833 (coverage = 1.86)
+Log10PV=21.00 MappingRate=0.833 (coverage = 1.86)
+Log10PV=22.00 MappingRate=0.833 (coverage = 1.86)
+Log10PV=23.00 MappingRate=0.833 (coverage = 1.86)
+Log10PV=24.00 MappingRate=0.833 (coverage = 1.86)
+Log10PV=25.00 MappingRate=0.833 (coverage = 1.86)
+Log10PV=26.00 MappingRate=0.833 (coverage = 1.86)
+Log10PV=27.00 MappingRate=0.833 (coverage = 1.86)
+Log10PV=28.00 MappingRate=0.833 (coverage = 1.86)
+Log10PV=29.00 MappingRate=0.833 (coverage = 1.86)
+Log10PV=30.00 MappingRate=0.833 (coverage = 1.86)
+refalign:nummaps=6,startmaps=6,totalmaps=21,refmaps=3:end time=17.446586(Elapsed=7.939924)
+Generating /home/csgrads/wpan005/output/refaligner/input_contigs_BspQI_BNG_VS_seq_r.cmap (condensed reference)
+color=1:Total Reference Length= 6598.485 Kb, Unmapped Length= 2745.756 Kb (41.6%)
+Generating /home/csgrads/wpan005/output/refaligner/input_contigs_BspQI_BNG_VS_seq.map
+Pvalue threshold=1.000000e-15 corresponds to Z-score threshold of 7.941345
+Generating /home/csgrads/wpan005/output/refaligner/input_contigs_BspQI_BNG_VS_seq_q.cmap (with 6 contigs or maps)
+Generating /home/csgrads/wpan005/output/refaligner/input_contigs_BspQI_BNG_VS_seq.xmap
+Generating /home/csgrads/wpan005/output/refaligner/input_contigs_BspQI_BNG_VS_seq.indel
+Found 0 Chimeric Query contigs
+Generated /home/csgrads/wpan005/output/refaligner/input_contigs_BspQI_BNG_VS_seq.xmap with 6 match groups
+Generated /home/csgrads/wpan005/output/refaligner/input_contigs_BspQI_BNG_VS_seq.indel with 0 indels
+Reference : Total Aligned length = 6.967 Mb, Unique Aligned Length = 3.853 Mb
+Query : Total Aligned length = 6.982 Mb, Unique Aligned Length = 5.194 Mb
+refmaps=3,maps=6,totalmaps=6,21: true positives=0(negative scores=0)
+  6 alignments:score=294.4438,LogPV=123.6075,pairs=95.67,LogLR=127.875337
+  6 above threshold:score=294.443845,LogPV=123.6075,pairs=95.67,LogLR=127.875337(1.346056/site)
+  outliers=0/568 (rate=0.000104), endoutliers=5/580 (rate=0.008621)
+  chimeric sites=5/576(0.008681),chimeric frags=0(FP=0,close pairs=0)):
+  PrPen=-9.138203,Xsites=625.0: PRbias = 0.000000 -> -0.014621
+  sumX=7943.285(6314.362),sumY=7929.028 w/outliers,FPcnt=49(isolated=7) : FP = 0.616873 -> 0.616873(unbiased=0.776009) (per 100kb), FPrate=0.085069
+  sitecnt=576,FNcnt=0(isolated=0) : FN= 0.001000 -> 0.000000
+  var(y,r) = sf^2 + sd^2 y +sr^2 y^2 + se^2 r^2: sf = 0.238241 -> 0.238678 (kb), sd = -0.060404 -> -0.060782 (kb^1/2), sr = 0.015703 -> 0.015765, se = 0.000000 -> 0.000000
+  Bases per pixel = 510.2867 -> 510.2919 (S.D. =2.1578) (FP = 0.616873 -> 0.616867)
+    Rescaling all map site[] and rawsite[] values  by C=1.000010131331 (reflecting change in bpp)
+Generating /home/csgrads/wpan005/output/refaligner/input_contigs_BspQI_BNG_VS_seq.err (error file)
+Generating /home/csgrads/wpan005/output/refaligner/input_contigs_BspQI_BNG_VS_seq.maprate (mapping rate file)
+Generating /home/csgrads/wpan005/output/refaligner/input_contigs_BspQI_BNG_VS_seq.errbin (binary error file)
+END of output

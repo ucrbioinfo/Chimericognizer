@@ -1,0 +1,11 @@
+fasta list files:	/home/csgrads/wpan005/Chimericognizer/examples/contig_file_list.example.txt
+output directory:	/home/csgrads/wpan005/output
+optical map list file:	/home/csgrads/wpan005/Chimericognizer/examples/optmap_list.example.txt
+number of threads:	8
+REFALIGNER tool:	/home/csgrads/wpan005/Refaligner/RefAligner
+threshold_1:	1.5
+threshold_2:	1.0
+threshold_3	25.0
+threshold_4	50000.0
+threshold_5	50000.0
+threshold_6	80000.0

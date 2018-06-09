@@ -1,0 +1,10 @@
+# CMAP = /home/csgrads/wpan005/output/refaligner/input_contigs_BspQI.cmap
+# filter: Minimum Labels = 0
+# filter: Minimum Size (Kb) = 0
+CompntId	CompntName	CompntLength
+1	SEQ_1	1874577
+2	SEQ_2	3697143
+3	SEQ_3	3201188
+4	SEQ_4	1975008
+5	SEQ_5	811813
+6	SEQ_6	3196264
