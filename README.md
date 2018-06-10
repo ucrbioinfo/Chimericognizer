@@ -37,8 +37,6 @@ Please note that "fa2cmap_multi.pl" only supports 5 types restriction enzymes Bs
 
 
 There are two kinds of parameters, functional parameters and performance related parameters. 
-Functional parameters are the ones that users may have to set by themselves. For performance related parameters, many users may not be able to understand the meaning of some of them. For these users, we suggest them to use default parameters. 
-
 
 1. functional parameters  
 
